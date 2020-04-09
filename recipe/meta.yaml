@@ -14,7 +14,7 @@ source:
     - remove_trollius.patch
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
