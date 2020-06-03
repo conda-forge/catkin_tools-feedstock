@@ -1,6 +1,6 @@
 {% set name = "catkin_tools" %}
-{% set version = "0.4.5" %}
-{% set sha256 = "6a9a2512183824a8250979c7772dc9487e3d2830a956fbd52fd2d8d71fba6d58" %}
+{% set version = "0.6.1" %}
+{% set sha256 = "1a168d668d0bab2e2704cd1e26af5fe19f57fb959bd2373ed5e63d04e78e622f" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - remove_trollius.patch
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
@@ -43,7 +43,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'This Python package provides command line tools for working with the catkin meta-buildsystem and catkin workspaces.'
+  summary: This Python package provides command line tools for working with the catkin meta-buildsystem and catkin workspaces.
   dev_url: https://github.com/catkin/catkin_tools
 
 extra:
