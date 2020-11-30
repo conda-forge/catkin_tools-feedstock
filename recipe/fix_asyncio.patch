@@ -1,7 +1,7 @@
-diff --git a/common.py b/common.py
+diff --git a/catkin_tools/common.py b/catkin_tools/common.py
 index b04b04ef..7d0cac73 100644
---- a/common.py
-+++ b/common.py
+--- a/catkin_tools/common.py
++++ b/catkin_tools/common.py
 @@ -30,7 +30,10 @@
      _cmd_split(u'\u00E9')
  
@@ -23,10 +23,10 @@ index b04b04ef..7d0cac73 100644
  
      def release(self):
          pass
-diff --git a/execution/controllers.py b/execution/controllers.py
+diff --git a/catkin_tools/execution/controllers.py b/catkin_tools/execution/controllers.py
 index 4d6ed2ba..4b35cb53 100644
---- a/execution/controllers.py
-+++ b/execution/controllers.py
+--- a/catkin_tools/execution/controllers.py
++++ b/catkin_tools/execution/controllers.py
 @@ -20,6 +20,7 @@
      from Queue import Empty
  
@@ -53,10 +53,10 @@ index 4d6ed2ba..4b35cb53 100644
                  number_of_columns)
          else:
              wide_log("")
-diff --git a/execution/executor.py b/execution/executor.py
+diff --git a/catkin_tools/execution/executor.py b/catkin_tools/execution/executor.py
 index db047734..b3ad2a86 100644
---- a/execution/executor.py
-+++ b/execution/executor.py
+--- a/catkin_tools/execution/executor.py
++++ b/catkin_tools/execution/executor.py
 @@ -73,7 +73,7 @@
          # Check for stage synchronization lock
          if stage.locked_resource is not None:
