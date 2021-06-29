@@ -27,6 +27,7 @@ requirements:
   run:
     - python
     - catkin_pkg >0.2.9
+    - make
     - pyyaml
     - psutil
     - osrf_pycommon >0.1.1
