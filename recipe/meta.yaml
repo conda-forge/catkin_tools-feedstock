@@ -1,6 +1,6 @@
 {% set name = "catkin_tools" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "1a168d668d0bab2e2704cd1e26af5fe19f57fb959bd2373ed5e63d04e78e622f" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "853e74dd05418b540e3523296b1da691db5d02a8b7c31eff2d0d377a536ca05d" %}
 
 package:
   name: {{ name|lower }}
@@ -10,28 +10,24 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/catkin/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - remove_trollius.patch
-    - fix_asyncio.patch
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [win]
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
-    - catkin_pkg >0.2.9
+    - python >=3.6
+    - catkin_pkg >=0.3.0
     - make
     - pyyaml
     - psutil
     - osrf_pycommon >0.1.1
-    - trollius  # [py < 34]
 
 test:
   commands:
