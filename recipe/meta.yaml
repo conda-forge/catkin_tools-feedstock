@@ -10,9 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/catkin/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - remove_trollius.patch
-    - fix_asyncio.patch
 
 build:
   number: 0
@@ -26,12 +23,11 @@ requirements:
     - setuptools
   run:
     - python
-    - catkin_pkg >0.2.9
+    - catkin_pkg >=0.3.0
     - make
     - pyyaml
     - psutil
     - osrf_pycommon >0.1.1
-    - trollius  # [py < 34]
 
 test:
   commands:
