@@ -1,6 +1,6 @@
 {% set name = "catkin_tools" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "1ded682e4c13ef9aef97ff12472357418eb0c1581db5c319d2594162bfc18652" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "cc3601aad1e1892b7765b052736d4367069cb830ec50b34db780e817dcad1745" %}
 
 package:
   name: {{ name|lower }}
