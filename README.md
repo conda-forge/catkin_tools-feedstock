@@ -1,11 +1,11 @@
-About catkin_tools
-==================
+About catkin_tools-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catkin_tools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://catkin-tools.readthedocs.io/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catkin_tools-feedstock/blob/main/LICENSE.txt)
 
 Summary: This Python package provides command line tools for working with the catkin meta-buildsystem and catkin workspaces.
 
