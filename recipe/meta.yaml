@@ -12,17 +12,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - catkin_pkg >=0.3.0
     - make
     - pyyaml
@@ -31,6 +31,8 @@ requirements:
     - coreutils
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - catkin --help
     - catkin init --help
