@@ -1,6 +1,6 @@
 {% set name = "catkin_tools" %}
-{% set version = "0.9.4" %}
-{% set sha256 = "5b6e1867b0e82b7a69b847be170d808074f6b817c44766d261bca55856475647" %}
+{% set version = "0.9.5" %}
+{% set sha256 = "5096136de611462e656947e4ced82ba3538b5c9c11a80461ece05828518d260f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
